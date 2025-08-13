@@ -1,7 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-
-    <q-header elevated class="bg-caribe-gradient text-white" height-hint="98">
+    <q-header elevated class="caribe text-white" height-hint="98">
       <q-toolbar class="q-px-md">
         <q-toolbar-title>
           <div class="row items-center no-wrap">
@@ -30,12 +29,12 @@
         <q-route-tab name="deportes" to="/sports" label="Sports" />
       </q-tabs>
     </q-header>
-
+    <!-- <HotelCarrusel /> -->
     <q-page-container>
       <router-view />
     </q-page-container>
 
-    <q-footer elevated class="bg-blue-grey-9 text-white">
+    <q-footer elevated class="bg-blue-grey-5 text-white">
       <q-toolbar class="q-py-md">
         <q-toolbar-title class="text-center text-subtitle2">
           &copy; {{ new Date().getFullYear() }} Cielo Azul Hotel & Spa · Playa del Carmen, Riviera Maya ·
@@ -47,10 +46,15 @@
   </q-layout>
 </template>
 
-<style lang="scss">
+<script setup>
+import { ref } from 'vue';
+import HotelCarrusel from './components/HotelCarrusel.vue';
+</script>
+
+<style lang="scss" scoped>
 // Gradiente de fondo inspirado en el Caribe
-.bg-caribe-gradient {
-  background: linear-gradient(135deg, #006175, #00a8b5, #4ecdc4);
+.caribe {
+  background: rgba(25, 46, 56, 0.8);
 }
 
 // Mejora visual en los tabs

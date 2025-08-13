@@ -87,8 +87,22 @@ const restaurantes = [
         servicios: 'Coctelería en vivo, DJ los fines de semana, vista 360°',
         ambiente: 'Sofisticado y relajante'
         }
+    },
+    {
+        id: 6,
+        titulo: 'Cena Privada en la Playa',
+        descripcion: 'Una velada inolvidable con menú gourmet servido bajo la luz de las velas en la orilla del mar.',
+        imagen: 'https://images.trvl-media.com/localexpert/625514/7397327e-0849-4c68-84af-706170539ce2.jpg?impolicy=resizecrop&rw=1005&rh=565',
+        precio: '$120/persona',
+        detalles: {
+            tipo: 'Cena privada - Romántica',
+            horario: '20:00 - 23:00 (bajo reserva)',
+            especialidad: 'Menú de 5 tiempos con mariscos frescos, vinos seleccionados, postre artesanal',
+            servicios: 'Decoración con pétalos, música en vivo, fotos profesionales, traslado en carruaje',
+            ambiente: 'Íntimo, elegante, perfecto para propuestas o aniversarios'
+        }
     }
-    ]
+]
 </script>
 
 <style scoped>
@@ -101,8 +115,10 @@ const restaurantes = [
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 24px;
-    padding: 0 16px;
+    padding: 20px 16px;
     place-items: center;
+    background: #e0f7fa;
+    border-radius: 8px;
 }
 @media (max-width: 600px) {
     .contenedorCards {

@@ -84,7 +84,21 @@ const habitaciones = [
             habitaciones: '1 dormitorio principal + zona de estar',
             medidas: '50 m²'
         }
-    }
+    },
+    {
+        id: 6,
+        titulo: 'Loft Romántico en la Azotea',
+        descripcion: 'Disfruta de una experiencia íntima bajo las estrellas con jacuzzi privado y vista panorámica al océano.',
+        imagen: 'https://a0.muscache.com/im/pictures/miso/Hosting-51688910/original/cf66bae8-b739-43ae-be1d-9fe2341bc952.jpeg?im_w=720',
+        precio: '$380/noche',
+        detalles: {
+            capacidad: '2 personas',
+            servicios: 'Jacuzzi privado, cena romántica en la terraza, música ambiental, desayuno en cama',
+            habitaciones: '1 dormitorio + terraza exclusiva',
+            medidas: '60 m² + 40 m² de terraza',
+            ambiente: 'Romántico, exclusivo, ideal para lunas de miel'
+        }
+    },
 ]
 </script>
 
@@ -98,8 +112,9 @@ const habitaciones = [
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 24px;
-    padding: 0 16px;
+    padding: 20px 16px;
     place-items: center;
+    background: #e0f7fa;
 }
 @media (max-width: 600px) {
     .contenedorCards {

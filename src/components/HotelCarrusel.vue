@@ -11,7 +11,7 @@
         control-color="white"
         padding
         arrows
-        height="600px"
+        height="700px"
         class="rounded-borders"
         @mouseenter="autoplay = false"
         @mouseleave="autoplay = true"
@@ -80,13 +80,7 @@ const goTo = (view) => {
 
 <style lang="scss" scoped>
 .carrusel {
-    overflow: hidden;
-    border-radius: 12px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.q-carousel-slide {
-    position: relative !important;
+    position: relative;
+    top: -100px;
 }
 </style>

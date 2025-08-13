@@ -65,9 +65,10 @@ import HotelCarrusel from '../components/HotelCarrusel.vue';
 // Titulo principal
 .titulo {
     text-align: center;
-    background: #006064;
+    background: #e0f7fa;
     color: #ffffff;
     padding: 60px 20px;
+    margin-top: -100px;
 }
 .tituloTexto {
     font-size: 45px;
@@ -87,7 +88,7 @@ import HotelCarrusel from '../components/HotelCarrusel.vue';
 // Contenedor texto descripcion
 .contenedorTextoDescription{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
     line-height: 1.8;
 }
 

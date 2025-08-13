@@ -93,6 +93,21 @@ const deportesExtremos = [
             ubicacion: 'Reserva Natural Xcacel',
             recomendaciones: 'Ropa que pueda ensuciarse, gafas o lentes de sol'
         }
+    },
+    {
+        id: 6,
+        titulo: 'Snorkel con Tortugas Marinas',
+        descripcion: 'Nada junto a tortugas marinas en su hábitat natural, en una laguna protegida de aguas cristalinas.',
+        imagen: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6c/3c/8d.jpg',
+        precio: '$90/persona',
+        detalles: {
+            atraccion: 'Snorkel con vida marina',
+            duracion: '3 horas',
+            nivel: 'Principiante',
+            incluye: 'Equipo de snorkel, chaleco salvavidas, guía especializado, fotos subacuáticas',
+            ubicacion: 'Bahía de Akumal',
+            recomendaciones: 'No usar protector solar químico (ofrecemos uno ecológico), no tocar a los animales'
+        }
     }
 ]
 </script>
@@ -108,8 +123,9 @@ const deportesExtremos = [
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 24px;
-    padding: 0 16px;
+    padding: 20px 16px;
     place-items: center;
+    background: #e0f7fa;
 }
 @media (max-width: 600px) {
     .contenedorCards {

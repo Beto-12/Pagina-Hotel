@@ -88,6 +88,20 @@ const servicios = [
             servicios: 'Donamos el 5% de ingresos a conservación marina, usamos productos biodegradables',
             ambiente: 'Conciente, comunitario y educativo'
         }
+    },
+    {
+        id: 6,
+        titulo: 'Tratamiento de Spa Maya con Ceniza Sagrada',
+        descripcion: 'Un ritual de purificación ancestral que combina masajes, arcilla volcánica y ceniza ceremonial.',
+        imagen: 'https://i0.wp.com/www.guiamexico.com.br/wp-content/uploads/2020/04/16-azulik-maya-spa-vy733.jpg?resize=768%2C640&strip=all&quality=60&ssl=1',
+        precio: '$130/sesión',
+        detalles: {
+            tipo: 'Spa y bienestar',
+            especialidad: 'Ritual de purificación maya, envoltura de ceniza, masaje energético, aromaterapia con copal',
+            horario: '9:00 - 18:00',
+            servicios: 'Duración: 2.5 horas, incluye temazcal, hidratación con agua de coco sagrada',
+            ambiente: 'Espiritual, relajante, con música de tambores y cantos tradicionales'
+        }
     }
 ]
 </script>
@@ -102,8 +116,9 @@ const servicios = [
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 24px;
-    padding: 0 16px;
+    padding: 20px 16px;
     place-items: center;
+    background: #e0f7fa;
 }
 @media (max-width: 600px){
     .contenedorCards {
