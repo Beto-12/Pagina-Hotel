@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header elevated class="caribe text-white" height-hint="98">
+    <q-header reveal elevated class="caribe text-white" height-hint="98">
       <q-toolbar class="q-px-md">
         <q-toolbar-title>
           <div class="row items-center no-wrap">
@@ -29,7 +29,7 @@
         <q-route-tab name="deportes" to="/sports" label="Sports" />
       </q-tabs>
     </q-header>
-    <!-- <HotelCarrusel /> -->
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -48,7 +48,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import HotelCarrusel from './components/HotelCarrusel.vue';
+
 </script>
 
 <style lang="scss" scoped>

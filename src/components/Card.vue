@@ -182,4 +182,10 @@
         font-size: 17px;
         margin: 12px 0;
     }
+
+    @media(max-width: 600px) {
+        .Card {
+            width: 100%;
+        }
+    }
     </style>
